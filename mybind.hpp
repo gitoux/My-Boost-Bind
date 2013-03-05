@@ -2,15 +2,9 @@
 # define MYBIND_HPP_
 
 // These functions have for aim to simulate boost::bind with boost::ref.
-// We call the static member function creatCallBack and with the partial specialisation.
 // We recup an generic object and we can put it in STL contener or array/list.
 // I made surcharges from 0 to 9 arguments.
-// The only signature exeption which isn't accept is for functions : void(...),
-// because the aim of a callback, for me, is to return at least true/false
-// Ex.: If we creat Mybind<int(int, char)>::creatCallBack(&Class::func, Class&)
-//      We recup function in a pointer : Mybind<int(int, int)>::ICallObj*
-//      and we can put it in a std::vector<Mybind<int(int, int)>::ICallObj*> with
-//      other functions with the same signature.
+// The only signature exeption which isn't accept is for functions : void(...).
 
 template<typename RET>
 class	Mybind;
