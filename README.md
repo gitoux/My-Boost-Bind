@@ -3,7 +3,7 @@ My-Boost-Bind
 
 My first step in C++ meta-programming.
 
-For a school project I had need to creat a callable object which can call a member function,
+For a school project I had to creat a callable object which can call a member function,
 which is situated in a specific instance.
 I hadn't the right to use Boost library, so I re-code a boost::bind/boost::ref light.
 It's a limited callable object, but it's the first time I use meta-programmation in C++, so I'm a little proud of me.
